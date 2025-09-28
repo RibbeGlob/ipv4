@@ -46,13 +46,18 @@ apps/
 
 W katalogu głównym znajduje się plik Makefile, który automatyzuje proces budowania.
 Obsługiwane są zarówno systemy Windows jak i Linux.
+Domyślnie PREFIX_MAX_NODES=2048.
+Możesz ustawić własną wartość przy wywołaniu make (bez edycji kodu).
+Dzięki temu biblioteka zostanie skompilowana z nowym limitem węzłów.
+Jeśli wartość ≤ 32767, używany jest 16-bitowy indeks (int16_t).
+Dla większych wartości automatycznie przełączane jest na 32-bitowy (int32_t).
 
 ```bash
 # Windows
-mingw32-make
+mingw32-make PREFIX_MAX_NODES=4096
 
 # Linux
-make
+make PREFIX_MAX_NODES=4096
 ```
 
 - na Windowsie powstanie plik ipv4.exe
@@ -213,14 +218,19 @@ apps/
 
 ### Makefile
 
-A `Makefile` is included to automate the build on both Windows and Linux:
+A `Makefile` is included to automate the build on both Windows and Linux.
+By default, PREFIX_MAX_NODES=2048.
+You can override this at build time without editing the source.
+This compiles the library with a custom maximum number of nodes.
+If the value ≤ 32767, a 16-bit index (int16_t) is used.
+For larger values, the code automatically switches to 32-bit (int32_t).
 
 ```bash
 # Windows
-mingw32-make
+mingw32-make PREFIX_MAX_NODES=4096
 
 # Linux
-make
+make PREFIX_MAX_NODES=4096
 ```
 
 - Produces `ipv4.exe` on Windows  

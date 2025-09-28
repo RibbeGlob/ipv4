@@ -35,7 +35,7 @@ src/
   prefix_bits.c
   prefix.c
 apps/
-  main.c        # Przykładowe użycie
+  main.c        # Prosty test
 ```
 
 ---
@@ -174,7 +174,7 @@ int main(void){
 
 ## Testy
 
-Aktualnie `apps/main.c` zawiera **prosty program demonstracyjny**:
+`apps/main.c` zawiera test:
 - dodawanie kilku prefiksów,
 - sprawdzanie przykładowych adresów,
 - usuwanie prefiksów i ponowny odczyt `check()`.
@@ -209,7 +209,7 @@ src/
   prefix_bits.c
   prefix.c
 apps/
-  main.c        # Sample usage
+  main.c        # test
 ```
 
 ---
@@ -348,10 +348,11 @@ int main(void){
 
 ## Tests
 
-Currently, `apps/main.c` is a **simple demo program**:
+`apps/main.c` is a test
 - adds a few prefixes,
 - checks several sample addresses,
 - deletes prefixes and shows `check()` results afterwards.
 
 ---
+
 

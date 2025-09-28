@@ -35,7 +35,7 @@ src/
   prefix_bits.c
   prefix.c
 apps/
-  main.c        # testy i przykładowe użycie
+  main.c        # Przykładowe użycie
 ```
 
 ---
@@ -209,7 +209,7 @@ src/
   prefix_bits.c
   prefix.c
 apps/
-  main.c        # tests and sample usage
+  main.c        # Sample usage
 ```
 
 ---
@@ -354,3 +354,4 @@ Currently, `apps/main.c` is a **simple demo program**:
 - deletes prefixes and shows `check()` results afterwards.
 
 ---
+
